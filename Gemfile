@@ -26,6 +26,8 @@ gem 'paper_trail', '>= 4.0.0.beta2'
 gem 'browser-timezone-rails'
 gem 'redcarpet', '3.1.2'
 
+gem 'unicorn-rails'
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
