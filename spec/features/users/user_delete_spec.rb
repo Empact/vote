@@ -1,6 +1,8 @@
 include Warden::Test::Helpers
 Warden.test_mode!
 
+require 'rails_helper'
+
 # Feature: User delete
 #   As a user
 #   I want to delete my user profile

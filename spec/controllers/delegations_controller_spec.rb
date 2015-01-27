@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe DelegationsController do
+RSpec.describe DelegationsController do
   describe "GET 'new'" do
     let(:action) { get :new }
 

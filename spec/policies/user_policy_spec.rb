@@ -1,4 +1,6 @@
-describe UserPolicy do
+require 'rails_helper'
+
+RSpec.describe UserPolicy do
   subject { UserPolicy }
 
   let (:current_user) { FactoryGirl.build_stubbed :user }

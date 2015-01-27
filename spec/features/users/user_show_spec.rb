@@ -1,6 +1,8 @@
 include Warden::Test::Helpers
 Warden.test_mode!
 
+require 'rails_helper'
+
 # Feature: User profile page
 #   As a user
 #   I want to visit my user profile page
