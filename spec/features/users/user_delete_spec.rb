@@ -1,17 +1,10 @@
-include Warden::Test::Helpers
-Warden.test_mode!
-
 require 'rails_helper'
 
 # Feature: User delete
 #   As a user
 #   I want to delete my user profile
 #   So I can close my account
-feature 'User delete', :devise, :js do
-
-  after(:each) do
-    Warden.test_reset!
-  end
+feature 'User delete', :devise, :warden do
 
   # Scenario: User can delete own account
   #   Given I am signed in
@@ -28,7 +21,3 @@ feature 'User delete', :devise, :js do
   end
 
 end
-
-
-
-

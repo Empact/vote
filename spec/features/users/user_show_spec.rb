@@ -1,17 +1,10 @@
-include Warden::Test::Helpers
-Warden.test_mode!
-
 require 'rails_helper'
 
 # Feature: User profile page
 #   As a user
 #   I want to visit my user profile page
 #   So I can see my personal account data
-feature 'User profile page', :devise do
-
-  after(:each) do
-    Warden.test_reset!
-  end
+feature 'User profile page', :devise, :warden do
 
   # Scenario: User sees own profile
   #   Given I am signed in

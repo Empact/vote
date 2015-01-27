@@ -1,17 +1,10 @@
-include Warden::Test::Helpers
-Warden.test_mode!
-
 require 'rails_helper'
 
 # Feature: User index page
 #   As a user
 #   I want to see a list of users
 #   So I can see who has registered
-feature 'User index page', :devise do
-
-  after(:each) do
-    Warden.test_reset!
-  end
+feature 'User index page', :devise, :warden do
 
   # Scenario: User listed on index page
   #   Given I am signed in
