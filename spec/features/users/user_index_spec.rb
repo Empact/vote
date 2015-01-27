@@ -4,7 +4,7 @@ require 'rails_helper'
 #   As a user
 #   I want to see a list of users
 #   So I can see who has registered
-feature 'User index page', :devise, :warden do
+RSpec.feature 'User index page', :devise, :warden do
 
   # Scenario: User listed on index page
   #   Given I am signed in

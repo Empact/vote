@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature 'Delegations form', :devise do
+RSpec.feature 'Delegations form', :devise do
 
   scenario 'add new delegation entry', :js do
     visit new_delegation_path

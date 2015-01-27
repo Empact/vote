@@ -4,7 +4,7 @@ require 'rails_helper'
 #   As a user
 #   I want to delete my user profile
 #   So I can close my account
-feature 'User delete', :devise, :warden do
+RSpec.feature 'User delete', :devise, :warden do
 
   # Scenario: User can delete own account
   #   Given I am signed in

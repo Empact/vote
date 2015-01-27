@@ -4,7 +4,7 @@ require 'rails_helper'
 #   As a user
 #   I want to edit my user profile
 #   So I can change my email address
-feature 'User edit', :devise, :warden do
+RSpec.feature 'User edit', :devise, :warden do
 
   # Scenario: User changes email address
   #   Given I am signed in

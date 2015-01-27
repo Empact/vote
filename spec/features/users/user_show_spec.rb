@@ -4,7 +4,7 @@ require 'rails_helper'
 #   As a user
 #   I want to visit my user profile page
 #   So I can see my personal account data
-feature 'User profile page', :devise, :warden do
+RSpec.feature 'User profile page', :devise, :warden do
 
   # Scenario: User sees own profile
   #   Given I am signed in
